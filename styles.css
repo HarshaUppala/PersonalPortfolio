@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root{
+    --background-color:#0B132B;
+    --primary-color:#004052;
+    --primary-font:'Mukta', sans-serif;
+    --button-color:#5BC0BE;
+    --navbar-color:#3A506B;
+    --font-color:#6FFFE9;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: var(--primary-font);
+}
+
+.navBar{
+    background-color: var(--navbar-color);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: var(--font-color);
+}
+
+.navBar p{
+    font-size: 1.2rem;
+}
+
+.navBarAnchors a{
+    padding: 0.2rem 0.2rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.myName{
+    color: var(--font-color);
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 1rem;
+    animation: entrydown 1s ease-in-out 0s 1 normal forwards;
+}
+
+.content{
+    color: var(--font-color);
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 1.6rem 1.6rem;
+    text-align:left;
+}
+
+.avatarContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.avatar{
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 46px 1px rgba(91,192,190,0.32);
+    animation: entry 1s ease-in-out 0s 1 normal forwards;
+    
+}
+
+.intro{
+    animation: entry 1s ease-in-out 0s 1 normal forwards;
+}
+
+.cardsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 15rem;
+    height:fit-content;
+    padding-bottom: 0.5rem;
+    border: 1px solid var(--navbar-color);
+    margin-top: 1rem;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px 2px rgba(91,192,190,0.50);
+}
+
+.imgContainer{
+    width: 14.8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #263547;
+}
+
+.cardImg{
+    width:15rem;
+}
+
+.card h4,p{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.card h4{
+    margin-top: 0.3rem;
+}
+
+.cardLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardButton{
+    width: 3rem;
+    height: 1rem;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.cardButton:hover{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    outline: 1px solid var(--font-color);
+}
+
+
+.githubIcon{
+    width: 0.8rem;
+    margin: 0.5rem 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.tagsContainer{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.tags{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--navbar-color);
+    color: var(--primary-font);
+    font-size: 0.5rem;
+    margin-right: 0.3rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.skillSet{
+    margin-top: 1rem;
+}
+
+.skillSet h2{
+    font-size: 0.8rem;
+}
+
+.aboutMe{
+    margin-top: 1rem;
+}
+
+.eduDetail h1{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.address{
+    margin-left: 0.5rem;
+    font-size: 0.4rem;
+}
+
+.eduDetail{
+    border: 1px solid var(--navbar-color);
+    margin-top: 1rem;
+    padding: 0.3rem 0.3rem;
+}
+
+.unorderList{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.expDetail{
+    border: 1px solid var(--navbar-color);
+    margin-top: 1rem;
+    padding: 0.3rem 0.3rem;
+}
+
+.expDetail h1{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.workExperience{
+    margin-top: 0.8rem;
+}
+
+
+.contactDetails{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #5BC0BE;
+    color: var(--primary-color);
+    width: 16rem;
+}
+
+.icon{
+    width: 1rem;
+    margin-right: 0.4rem;
+}
+
+.profiles{
+    margin-top: 0.5rem;
+}
+
+.getInTouch{
+    display: flex;
+    align-items: center;
+}
+
+.svg-icon-container,.svg-icon{
+    display: none;
+}
+
+.mailTag{
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+.eduDetail{
+    transition: all .4s ease-in-out; 
+}
+
+.eduDetail:hover{
+    background-color: var(--font-color);
+    color: var(--background-color);
+}
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    animation: entry 1s ease-in-out 0s 1 normal forwards;
+}
+
+.footer{
+    background-color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 1rem;
+}
+
+.footer a{
+    color: var(--background-color);
+    font-size: 0.6rem;
+}
+
+.footer div{
+    padding: 0 1rem;
+}
+
+.contactImgContainer{
+    display: none;
+    width: 0;
+}
+
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+}
+
+form{
+    color: var(--background-color);
+}
+
+
+.formInput{
+    width: 16rem;
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+}
+
+.formButton{
+    width: 4rem;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    height: 1rem;
+    font-size: 0.7rem;
+}
+
+.formInput,.formButton:hover{
+    box-shadow: 0px 0px 46px 1px rgba(91,192,190,0.32);
+}
+
+.formContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-color);
+    padding: 1rem 1rem;
+}
+
+.contactImg{
+    width: 8rem;
+    transform: scaleX(-1);
+}
+
+.contactImgContainer{
+    width: 10rem;
+}
+
+.btnHire{
+    height: 1rem;
+    width: 3rem;
+    font-size: 0.5rem;
+    margin-left: 0.3rem;
+    background-color: var(--background-color);
+    border: 2px solid var(--navbar-color);
+    color: var(--font-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.navBarAnchors{
+    display: flex;
+    align-items: center;
+}
+
+.resumeDownload{
+    display: flex;
+    align-items: center;
+}
+
+.attribute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 450px)  {
+
+    *{
+        font-size: +1rem;
+    }
+
+    li{
+        font-size: 0.6rem;
+    }
+
+    .formContainer{
+        width: 40rem;
+    }
+
+    form input{
+        width: 30rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .profiles{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40rem;
+    }
+
+    .btnHire{
+        height: 1rem;
+        width: 3rem;
+        font-size: 0.5rem;
+        margin-left: 0.3rem;
+        background-color: var(--background-color);
+        border: 2px solid var(--navbar-color);
+        color: var(--font-color);
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 990px) and (min-width: 600px){
+
+    h1,p,a.h2,h3,li{
+        font-size: 1rem;
+    }
+
+    .address{
+        font-size: 0.7rem;
+    }
+
+    .aboutMeText{
+        font-size: 1rem;
+    }
+
+    .eduBackground{
+        font-size: 0.7rem;
+    }
+
+    .cardsContainer{
+        display: grid;
+        grid-template: repeat(3,20rem) / repeat(2,20rem);
+        align-items: center;
+        justify-items:center;
+        justify-content: center;
+        align-content: center;
+        row-gap: 12rem;
+        column-gap: 1rem;
+        height:95rem;
+    }
+
+    .card{
+        width: 18rem;
+        height:30rem;
+    }
+
+    .card h4{
+        font-size: 2rem;
+        margin:0 1rem;
+    }
+
+    .card p{
+        font-size: 1rem;
+        margin:0 1rem;
+    }
+
+    .imgContainer,.cardImg{
+        width:17.85rem;
+    }
+
+    .imgContainer{
+        height: 10rem;
+    }
+
+    .tagsContainer{
+        margin:0 1rem;
+    }
+
+    .cardLinks{
+        margin:1.5rem 0.6rem;
+    }
+
+    .cardButton{
+        font-size: 0.8rem;
+    }
+
+    .githubIcon{
+        width: 1rem;
+    }
+
+    .tags{
+        font-size: 0.7rem;
+    }
+
+    li{
+        margin-left: 0.7rem;
+    }
+
+    label,input{
+        font-size: 1rem;
+    }
+
+    .formInput{
+        width: 20rem;
+    }
+
+    .formButton{
+        font-size: 0.7rem;
+    }
+
+    .footer p,a{
+        font-size: 1rem;
+    }
+
+    .profiles{
+        display: flex;
+        align-items: center;
+    }
+
+    .contactDetails{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20rem;
+    }
+
+    .resumeDownload{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 990px)  {
+
+
+    .avatarIntro{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .avatarIntro h1,p{
+        font-size: 2.4rem;
+    }
+
+    .avatarContainer{
+        width: 30rem;
+    }
+
+    .myName{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .align-center{
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    .avatar{
+        width: 30rem;
+    }
+
+    .navBar{
+        height: 6rem;
+    }
+
+    .navBar p{
+        font-size: 3rem;
+    }
+
+
+    .navBarAnchors{
+        font-size: 3.5rem;
+    }
+
+    .resumeDownload{
+        font-size: 3.5rem;
+    }
+
+    .cardsContainer{
+        display: grid;
+        grid-template: repeat(2,18rem) / repeat(3,16rem);
+        align-items: center;
+        justify-items:center;
+        justify-content: center;
+        align-content: center;
+        row-gap: 24rem;
+        column-gap: 18rem;
+        height:90rem;
+    }
+
+
+    .griditem1,.griditem2,.griditem3,.griditem4,.griditem5,.griditem6{
+        width: 30rem;
+        height:40rem;
+    }
+
+    .card h4{
+        font-size: 2rem;
+        margin:0 1rem;
+    }
+
+    .card p{
+        font-size: 1.5rem;
+        margin:0 1rem;
+    }
+
+    .tagsContainer{
+        margin:0 1rem;
+    }
+
+    .spacebetween{
+        height:3.7rem;
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    .imgContainer,.cardImg{
+        width:29.85rem;
+    }
+
+    .imgContainer{
+        height: 15rem;
+    }
+
+    .edutimeline{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+
+    .tags{
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+    }
+
+    .cardLinks{
+        margin:1.5rem 0.6rem;
+    }
+
+    .cardButton{
+        width: 5rem;
+        height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .githubIcon{
+        width: 2rem;
+    }
+
+    .skillSet{
+        margin-top: 3rem;
+    }
+
+    .skillSet h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aboutMeText{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .eduDetail{
+        width: 50rem;
+    }
+
+    .eduDetail h1{
+        font-size: 2rem;
+    }
+
+    .eduDetail p{
+        font-size: 1.5rem;
+    }
+
+    .aboutMe{
+        margin-top: 3rem;
+    }
+
+    .eduBackground{
+        font-size: 2rem;
+    }
+
+
+    .address{
+        font-size: 1rem;
+    }
+
+    .svg-icon{
+        width: 20rem;
+    }
+
+    .skillintro{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .svg-icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50rem;
+    }
+
+    .skillContent p{
+        margin-left: 0;
+    }
+
+    .svg-icon{
+        display:block;
+    }
+    
+    .expDetail h1{
+        font-size: 2rem;
+    }
+
+    .expDetail li{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .contactDetails{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 0;
+    }
+
+
+    .contactDetailsTags{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contactImgContainer{
+        display: block;
+        width: 30rem;
+    }
+
+    form h1{
+        font-size: 2rem;
+    }
+
+    form label{
+        font-size: 1.5rem;
+    }
+
+    .formInput{
+        width: 45rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .formButton{
+        height: 2.5rem;
+        width: 9rem;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .formContainer{
+        width: 45rem;
+    }
+
+    .contactDetails{
+        width: 45rem;
+        margin-top: 1.5rem;
+    }
+
+    .getInTouch a{
+        font-size: 1.5rem;
+    }
+
+    .contactImg{
+        width: 20rem;
+    }
+
+    .icon{
+        width: 2rem;
+    }
+
+    .btnHire{
+        height: 3rem;
+        width: 9rem;
+        font-size: 1.5rem;
+        margin-left: 0.6rem;
+        background-color: var(--background-color);
+        border: 2px solid var(--navbar-color);
+        color: var(--font-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .footer a,p{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+/* Key Frames */
+  
+  @keyframes entry {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes entrydown {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scaleUp {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+/* // Scroll Bar styling // */
+
+*::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--navbar-color);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--button-color);
+    border-radius: 10px;
+    border: 1px solid var(--button-color);
+  }
